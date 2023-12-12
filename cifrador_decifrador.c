@@ -39,6 +39,7 @@
  * De "K" a "U" usa-se a sequência de 173 a 183 da tabela ascii
  * De "V" a "Z" usa-se a sequência de 129 a 133 da tabela ascii
  * De 33 a 47 na tabela ascii traca pela sequência 108 a 122
+ * De 48 a 57 na tabela ascii troca pela sequência 70 a 79
  */
 char cifrarSenha(char senha_plana[], char senha_cifrada[], int qt_c, int i)
 {
@@ -314,6 +315,47 @@ char cifrarSenha(char senha_plana[], char senha_cifrada[], int qt_c, int i)
 			
 			case 47: // /
 				senha_cifrada[i] = 122;
+				break;
+				
+			// < Números >
+			case 48: // 0
+				senha_cifrada[i] = 70;
+				break;
+				
+			case 49: // 1
+				senha_cifrada[i] = 71;
+				break;
+			
+			case 50: // 2
+				senha_cifrada[i] = 72;
+				break;
+			
+			case 51: // 3
+				senha_cifrada[i] = 73;
+				break;
+			
+			case 52: // 4
+				senha_cifrada[i] = 74;
+				break;
+			
+			case 53: // 5
+				senha_cifrada[i] = 75;
+				break;
+				
+			case 54: // 6
+				senha_cifrada[i] = 76;
+				break;
+			
+			case 55: // 7
+				senha_cifrada[i] = 77;
+				break;
+			
+			case 56: // 8
+				senha_cifrada[i] = 78;
+				break;
+			
+			case 57: // 9
+				senha_cifrada[i] = 79;
 				break;
 		}
 		
