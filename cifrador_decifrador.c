@@ -36,215 +36,214 @@ char cifrarSenha(char senha_plana[], char senha_cifrada[], int qt_c, int i)
 {
 	if (qt_c > 1)
 	{
-		// < Usando a Cifra de César >
 		switch(senha_plana[i])
 		{
-			case 65: // A -> D
-				senha_cifrada[i] = 100;
+			case 65: // A
+				
 				break;
 				
-			case 97: // a -> d
-				senha_cifrada[i] = 68;
+			case 97: // a
+				
 				break;
 				
-			case 66: // B -> E
-				senha_cifrada[i] = 101;
+			case 66: // B
+				
 				break;
 				
-			case 98: // b -> e
-				senha_cifrada[i] = 69;
+			case 98: // b
+				
 				break;
 				
-			case 67: // C -> F
-				senha_cifrada[i] = 102;
+			case 67: // C 
+				
 				break;
 				
-			case 99: // c -> f
-				senha_cifrada[i] = 70;
+			case 99: // c 
+				
 				break;
 				
-			case 68: // D -> G
-				senha_cifrada[i] = 103;
+			case 68: // D 
+				
 				break;
 				
-			case 101: // d -> g
-				senha_cifrada[i] = 71;
+			case 101: // d 
+				
 				break;
 				
-			case 69: // E -> H
-				senha_cifrada[i] = 104;
+			case 69: // E 
+				
 				break;
 				
-			case 102: // e -> h
-				senha_cifrada[i] = 72;
+			case 102: // e 
+				
 				break;
 				
-			case 70: // F -> I
-				senha_cifrada[i] = 105;
+			case 70: // F 
+				
 				break;
 			
-			case 103: // f -> i
-				senha_cifrada[i] = 73;
+			case 103: // f 
+				
 				break;
 				
-			case 71: // G -> J
-			senha_cifrada[i] = 106;
+			case 71: // G 
+			
 				break;
 			
-			case 104: // g -> j
-				senha_cifrada[i] = 74;
+			case 104: // g 
+				
 				break;
 				
-			case 72: // H -> K
-				senha_cifrada[i] = 107;
+			case 72: // H 
+				
 				break;
 			
-			case 105: // h -> k
-				senha_cifrada[i] = 75;
+			case 105: // h 
+				
 				break;
 				
-			case 73: // I -> L
-				senha_cifrada[i] = 108;
+			case 73: // I 
+				
 				break;
 			
-			case 106: // i -> l
-				senha_cifrada[i] = 76;
+			case 106: // i 
+				
 				break;
 				
-			case 74: // J -> M
-				senha_cifrada[i] = 109;
+			case 74: // J 
+				
 				break;
 			
-			case 107: // j -> m
-				senha_cifrada[i] = 77;
+			case 107: // j 
+				
 				break;
 				
-			case 75: // K -> N
-				senha_cifrada[i] = 110;
+			case 75: // K 
+				
 				break;
 				
-			case 108: // k -> n
-				senha_cifrada[i] = 78;
+			case 108: // k 
+				
 				break;
 				
-			case 76: // L -> O
-				senha_cifrada[i] = 112;
+			case 76: // L 
+				
 				break;
 			
-			case 109: // l -> o
-				senha_cifrada[i] = 79;
+			case 109: // l 
+				
 				break;
 				
-			case 77: // M -> P
-				senha_cifrada[i] = 113;
+			case 77: // M 
+				
 				break;
 				
-			case 110: // m -> p
-				senha_cifrada[i] = 80;
+			case 110: // m 
+				
 				break;
 				
-			case 78: // N -> Q
-				senha_cifrada[i] = 114;
+			case 78: // N 
+				
 				break;
 				
-			case 111: // n -> q
-				senha_cifrada[i] = 81;
+			case 111: // n 
+				
 				break;
 				
-			case 79: // O -> R
-				senha_cifrada[i] = 115;
+			case 79: // O 
+				
 				break;
 			
-			case 112: // o -> r
-				senha_cifrada[i] = 82;
+			case 112: // o 
+				
 				break;
 				
-			case 80: // P -> S
-				senha_cifrada[i] = 116;
+			case 80: // P 
+				
 				break;
 				
-			case 113: // p -> s
-				senha_cifrada[i] = 83;
+			case 113: // p 
+				
 				break;
 				
-			case 81: // Q -> T
-				senha_cifrada[i] = 117;
+			case 81: // Q 
+				
 				break;
 				
-			case 114: // q -> t
-				senha_cifrada[i] = 84;
+			case 114: // q 
+				
 				break;
 				
-			case 82: // R -> U
-				senha_cifrada[i] = 118;
+			case 82: // R 
+				
 				break;
 				
-			case 115: // r -> u
-				senha_cifrada[i] = 85;
+			case 115: // r 
+				
 				break;
 				
-			case 83: // S -> V
-			    senha_cifrada[i] = 119;
+			case 83: // S 
+			    
 				break;
 				
-			case 116: // s -> v
-				senha_cifrada[i] = 86;
+			case 116: // s 
+				
 				break;
 				
-			case 84: // T -> W
-				senha_cifrada[i] = 120;
+			case 84: // T 
+				
 				break;
 				
-			case 117: // t -> W
-				senha_cifrada[i] = 87;
+			case 117: // t 
+				
 				break;
 				
-			case 85: // U -> X
-				senha_cifrada[i] = 121;
+			case 85: // U
+				
 				break;
 				
-			case 118: // u -> x
-				senha_cifrada[i] = 89;
+			case 118: // u 
+				
 				break;
 				
-			case 86: // V -> Y
-				senha_cifrada[i] = 122;
+			case 86: // V 
+				
 				break;
 				
-			case 119: // v -> y
-				senha_cifrada[i] = 90;
+			case 119: // v 
+				
 				break;
 				
-			case 87: // W -> Z
-				senha_cifrada[i] = 97;
+			case 87: // W
+				
 				break;
 				
-			case 120: // w -> z
-				senha_cifrada[i] = 65;
+			case 120: // w 
+				
 				break;
 				
-			case 88: // X -> A
-				senha_cifrada[i] = 98;
+			case 88: // X 
+				
 				break;
 				
-			case 121: // x -> a
-				senha_cifrada[i] = 66;
+			case 121: // x 
+				
 				break;
 				
-			case 89: // Y -> B
-				senha_cifrada[i] = 99;
+			case 89: // Y 
+				
 				break;
 			
-			case 123: // y -> b
-				senha_cifrada[i] = 67;
+			case 123: // y 
+				
 				break;
 				
-			case 90: // Z -> c
-				senha_cifrada[i] = 100;
+			case 90: // Z 
+				;
 				break;
 			
-			case 124: // z -> c
-				senha_cifrada[i] = 68;
+			case 124: // z
+				
 				break;
 		}
 		
@@ -253,223 +252,224 @@ char cifrarSenha(char senha_plana[], char senha_cifrada[], int qt_c, int i)
 }
 
 // < Função para decifrar senhas cifradas --- FALTA FINALIZAR E AJEITAR, BAGUNÇADO!!!! >
-char decifrarSenha(char senha_cifrada[], int qtd_c, int i)
+char decifrarSenha(char senha_cifrada[], int qt_c, int i)
 {
 	if (qt_c > 1)
 	{
 		// < Usando a Cifra de César >
-		switch(senha_plana[i])
+		switch(senha_cifrada[i])
 		{
-			case 100: // D -> A
-				senha_cifrada[i] = 65;
+			case 65: // A
+				
 				break;
 				
-			case 68: // d -> a
-				senha_cifrada[i] = 97;
+			case 97: // a
+				
 				break;
 				
-			case 101: // E -> B
-				senha_cifrada[i] = 66;
+			case 66: // B
+				
 				break;
 				
-			case 69: // e -> b
-				senha_cifrada[i] = 98;
+			case 98: // b
+				
 				break;
 				
-			case 102: // F -> C
-				senha_cifrada[i] = 67;
+			case 67: // C 
+				
 				break;
 				
-			case 70: // f -> c
-				senha_cifrada[i] = 99;
+			case 99: // c 
+				
 				break;
 				
-			case 103: // G -> D
-				senha_cifrada[i] = 68;
+			case 68: // D 
+				
 				break;
 				
-			case 71: // g -> d
-				senha_cifrada[i] = 101;
+			case 101: // d 
+				
 				break;
 				
-			case 104: // H -> E
-				senha_cifrada[i] = 69;
+			case 69: // E 
+				
 				break;
 				
-			case 72: // h -> e
-				senha_cifrada[i] = 102;
+			case 102: // e 
+				
 				break;
 				
-			case 105: // I -> F
-				senha_cifrada[i] = 70;
+			case 70: // F 
+				
 				break;
 			
-			case 73: // i -> f
-				senha_cifrada[i] = 103;
+			case 103: // f 
+				
 				break;
 				
-			case 71: // J -> G
-			senha_cifrada[i] = 106;
+			case 71: // G 
+			
 				break;
 			
-			case 74: // j -> g
-				senha_cifrada[i] = 104;
+			case 104: // g 
+				
 				break;
 				
-			case 107: // K -> H
-				senha_cifrada[i] = 72;
+			case 72: // H 
+				
 				break;
 			
-			case 75: // k -> h
-				senha_cifrada[i] = 105;
+			case 105: // h 
+				
 				break;
 				
-			case 108: // L -> I
-				senha_cifrada[i] = 73;
+			case 73: // I 
+				
 				break;
 			
-			case 76: // l -> i
-				senha_cifrada[i] = 106;
+			case 106: // i 
+				
 				break;
 				
-			case 109: // M -> J
-				senha_cifrada[i] = 74;
+			case 74: // J 
+				
 				break;
 			
-			case 77: // m -> j
-				senha_cifrada[i] = 107;
+			case 107: // j 
+				
 				break;
 				
-			case 75: // N -> K
-				senha_cifrada[i] = 110;
+			case 75: // K 
+				
 				break;
 				
-			case 78: // n -> k
-				senha_cifrada[i] = 108;
+			case 108: // k 
+				
 				break;
 				
-			case 112: // O -> L
-				senha_cifrada[i] = 76;
+			case 76: // L 
+				
 				break;
 			
-			case 79: // o -> l
-				senha_cifrada[i] = 109;
+			case 109: // l 
+				
 				break;
 				
-			case 113: // P -> M
-				senha_cifrada[i] = 77;
+			case 77: // M 
+				
 				break;
 				
-			case 80: // p -> m
-				senha_cifrada[i] = 110;
+			case 110: // m 
+				
 				break;
 				
-			case 114: // Q -> N
-				senha_cifrada[i] = 78;
+			case 78: // N 
+				
 				break;
 				
-			case 111: // Q -> N
-				senha_cifrada[i] = 81;
+			case 111: // n 
+				
 				break;
 				
-			case 79: // O -> R
-				senha_cifrada[i] = 115;
+			case 79: // O 
+				
 				break;
 			
-			case 112: // o -> r
-				senha_cifrada[i] = 82;
+			case 112: // o 
+				
 				break;
 				
-			case 80: // P -> S
-				senha_cifrada[i] = 116;
+			case 80: // P 
+				
 				break;
 				
-			case 113: // p -> s
-				senha_cifrada[i] = 83;
+			case 113: // p 
+				
 				break;
 				
-			case 81: // Q -> T
-				senha_cifrada[i] = 117;
+			case 81: // Q 
+				
 				break;
 				
-			case 114: // q -> t
-				senha_cifrada[i] = 84;
+			case 114: // q 
+				
 				break;
 				
-			case 82: // R -> U
-				senha_cifrada[i] = 118;
+			case 82: // R 
+				
 				break;
 				
-			case 115: // r -> u
-				senha_cifrada[i] = 85;
+			case 115: // r 
+				
 				break;
 				
-			case 83: // S -> V
-			    senha_cifrada[i] = 119;
+			case 83: // S 
+			    
 				break;
 				
-			case 116: // s -> v
-				senha_cifrada[i] = 86;
+			case 116: // s 
+				
 				break;
 				
-			case 84: // T -> W
-				senha_cifrada[i] = 120;
+			case 84: // T 
+				
 				break;
 				
-			case 117: // t -> W
-				senha_cifrada[i] = 87;
+			case 117: // t 
+				
 				break;
 				
-			case 85: // U -> X
-				senha_cifrada[i] = 121;
+			case 85: // U
+				
 				break;
 				
-			case 118: // u -> x
-				senha_cifrada[i] = 89;
+			case 118: // u 
+				
 				break;
 				
-			case 86: // V -> Y
-				senha_cifrada[i] = 122;
+			case 86: // V 
+				
 				break;
 				
-			case 119: // v -> y
-				senha_cifrada[i] = 90;
+			case 119: // v 
+				
 				break;
 				
-			case 87: // W -> Z
-				senha_cifrada[i] = 97;
+			case 87: // W
+				
 				break;
 				
-			case 120: // w -> z
-				senha_cifrada[i] = 65;
+			case 120: // w 
+				
 				break;
 				
-			case 88: // X -> A
-				senha_cifrada[i] = 98;
+			case 88: // X 
+				
 				break;
 				
-			case 121: // x -> a
-				senha_cifrada[i] = 66;
+			case 121: // x 
+				
 				break;
 				
-			case 89: // Y -> B
-				senha_cifrada[i] = 99;
+			case 89: // Y 
+				
 				break;
 			
-			case 123: // y -> b
-				senha_cifrada[i] = 67;
+			case 123: // y 
+				
 				break;
 				
-			case 90: // Z -> c
-				senha_cifrada[i] = 100;
+			case 90: // Z 
+				;
 				break;
 			
-			case 124: // z -> c
-				senha_cifrada[i] = 68;
+			case 124: // z
+				
 				break;
 		}
 		
-		return cifrarSenha(senha_plana, qt_c-1, i+1);
+		return decifrarSenha(senha_cifrada, qt_c-1, i+1);
+	}
 }
 
 // < Procedimento de chamada das demais funções >
