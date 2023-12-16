@@ -694,68 +694,6 @@ char decifrarSenha(unsigned char senha_cifrada[], unsigned char senha_decifrada[
 	}
 }
 
-// < Procedimento de chamada das demais funções >
-void menu()
-{
-	// < Declaração de variáveis locais >
-	unsigned char texto[1000], senha_plana[21] = "ABC", senha_cifrada[61] = "ABC", senha_decifrada[61] = "ABC";
-	int opcao;
-	
-	// < Loop do menu >
-	do
-	{
-		printf(">-----------------<[ C R I P T O G R A F I A ]>-----------------<\nEscolha abaixo uma das opcoes que deseja acessar:\n[1]: Criptografar um texto\n\t=> Cifre um texto de ate 999 caracteres.\n[2]: Descriptografar um texto\n\t=> Descriptografe um texto de ate 2.997 caracteres.\n[3]: Criptografar uma senha.\n\t=> Criptografe uma senha de até 20 caracteres.\n[4]: Descriptografar uma senha\n\t=> Descriptografe uma senha de ate 60 caracteres.\n[0]: Sair do programa\n\t=> Fecha imediatamente o programa.\n\n--> Sua opcao: ");
-		scanf("%i", &opcao);
-		
-		switch (opcao)
-		{
-			case 1:
-				
-				break;
-				
-			case 2:
-				
-				break;
-				
-			case 3:
-				// < Entrada de dados >
-				system("cls");
-				printf(">-------------------<[ R E G R A S ]>-------------------<\n\t1. Não insira acentos;\n\t2. Não insira espaços.\n");
-				printf("Senha: ");
-				scanf("%s", senha_plana);
-				
-				// < Aplica a cifragem >
-				cifrarSenha(senha_plana, senha_cifrada, strlen(senha_plana)+1, 0);
-				
-				// < Imprime a saída (temporário) >
-				printf("\n\n%s\n%s\n\n", senha_plana, senha_cifrada);
-				break;
-				
-			case 4:
-				// < Entrada de dados >
-				system("cls");
-				printf(">-------------------<[ R E G R A S ]>-------------------<\n\t1. Insira uma senha criptografada pelo algoritmo [3] deste programa;\n\t2. Não insira espaços.\n");
-				printf("Senha criptografada: ");
-				scanf("%s", senha_cifrada);
-				
-				// < Aplica a cifragem >
-				decifrarSenha(senha_cifrada, senha_decifrada, strlen(senha_cifrada)+1, 0);
-				
-				// < Imprime a saída (temporário) >
-				printf("\n\nA senha decifrada é: %s\n", senha_decifrada);
-				break;
-				
-			case 5:
-				system("CLS");
-				
-				printf("\n\n[!] Programa finalizado com sucesso.\n\n");
-				
-				exit(1);
-				break;	
-		}
-	} while (opcao != 0);
-}
-
 /*
 =------------------------=
 =-> Programa Principal <-=
@@ -764,8 +702,6 @@ void menu()
 int main(void)
 {
 	setlocale(LC_ALL, "");
-	// < Chama o menu >
-	menu();
 	
 	return 0;
 }
