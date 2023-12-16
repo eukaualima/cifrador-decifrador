@@ -41,7 +41,7 @@
  * De 33 a 47 na tabela ascii traca pela sequência 108 a 122
  * De 48 a 57 na tabela ascii troca pela sequência 70 a 79
  */
-char cifrarSenha(char senha_plana[], char senha_cifrada[], int qt_c, int i)
+void cifrarSenha(unsigned char senha_plana[], unsigned char senha_cifrada[], int qt_c, int i)
 {
 	if (qt_c > 0)
 	{
@@ -368,7 +368,7 @@ char cifrarSenha(char senha_plana[], char senha_cifrada[], int qt_c, int i)
 }
 
 // < Função para decifrar senhas cifradas >
-char decifrarSenha(unsigned char senha_cifrada[], unsigned char senha_decifrada[], int qt_c, int i)
+void decifrarSenha(unsigned char senha_cifrada[], unsigned char senha_decifrada[], int qt_c, int i)
 {
 	if (qt_c > 0)
 	{
@@ -701,8 +701,24 @@ char decifrarSenha(unsigned char senha_cifrada[], unsigned char senha_decifrada[
 */
 int main(void)
 {
+	// < Muda a codificação dos caracteres para ALL "" >
 	setlocale(LC_ALL, "");
 	
+	// < Declaração de variáveis locais >
+	unsigned char senha_plana[256] = "ESCREVA-A-SENHA-AQUI", senha_cifrada[256] = "", senha_decifrada[256] = "";
+
+	// < Aplicação da cifragem >
+	cifrarSenha(senha_plana, senha_cifrada, strlen(senha_plana), 0);
+
+	// < Aplicação da decifragem >
+	decifrarSenha(senha_cifrada, senha_decifrada, strlen(senha_plana), 0);
+
+	// < Impressão do resultado da cifragem >
+	printf("Cifrada: %s", senha_cifrada);
+
+	// < Impressão do resultado da cifragem >
+	printf("\nDecifrada: %s", senha_decifrada);
+
 	return 0;
 }
 
