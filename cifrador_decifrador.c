@@ -33,13 +33,13 @@
 */
 // < Função do algoritmo de cifragem >
 /**
- * De "a" a "z" usa-se a sequência de 33 a 58 da tabela ascii
- * De "A" a "F" usa-se a sequência de 59 a 64 da tabela ascii
- * De "G" a "J" usa-se a sequência de 123 a 126 da tabela ascii
- * De "K" a "U" usa-se a sequência de 173 a 183 da tabela ascii
- * De "V" a "Z" usa-se a sequência de 129 a 133 da tabela ascii
- * De 33 a 47 na tabela ascii traca pela sequência 108 a 122
- * De 48 a 57 na tabela ascii troca pela sequência 70 a 79
+ * De "a" a "z" usa-se a sequência de 33 a 58 da tabela ascii (-32)
+ * De "A" a "F" usa-se a sequência de 59 a 64 da tabela ascii (-6)
+ * De "G" a "J" usa-se a sequência de 123 a 126 da tabela ascii (+52)
+ * De "K" a "U" usa-se a sequência de 173 a 183 da tabela ascii (+98)
+ * De "V" a "Z" usa-se a sequência de 129 a 133 da tabela ascii (+43)
+ * De 33 a 47 na tabela ascii troca pela sequência 108 a 122 (+75)
+ * De 48 a 57 na tabela ascii troca pela sequência 70 a 79 (+22)
  */
 void cifrarSenha(unsigned char senha_plana[], unsigned char senha_cifrada[], int qt_c, int i)
 {
@@ -705,7 +705,7 @@ int main(void)
 	setlocale(LC_ALL, "");
 	
 	// < Declaração de variáveis locais >
-	unsigned char senha_plana[256] = "ESCREVA-A-SENHA-AQUI", senha_cifrada[256] = "", senha_decifrada[256] = "";
+	unsigned char senha_plana[256] = "ana", senha_cifrada[256] = "", senha_decifrada[256] = "";
 
 	// < Aplicação da cifragem >
 	cifrarSenha(senha_plana, senha_cifrada, strlen(senha_plana), 0);
